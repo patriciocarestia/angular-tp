@@ -1,0 +1,16 @@
+<div class="container">
+    
+    <div class="mt-5 text-center">
+        <img src="https://www.gruposancristobal.com.ar/WebBundles/assets/img/logo_grupo_sc.svg" class="mx-3" style="width: 300px;" alt="Logo GSC">
+        <img src="https://accesapp.org/wp-content/uploads/2021/07/logo-utn.png" style="width: 300px;" alt="Logo UTN">
+    </div>
+    
+    <div class="text-center">
+        <h2 class="mt-5 pb-3">Welcome</h2>
+    
+        <a class="h4"  [routerLink]="['/login']"  *ngIf="!isUserAuthenticated()">Go to Log In</a>
+        <a class="h4"  [routerLink]="['/persons/list']"  *ngIf="isUserAuthenticated()">Go to <strong>Persons List</strong></a>
+    </div>
+    <br>
+</div>
+
